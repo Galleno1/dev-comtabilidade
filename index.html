@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? família= Montserrat:wght@100;500;900 & display=swap"
+        rel="stylesheet">
+    <title>Dev Contabilidade</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho"> Dev Contábilidade </h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="chameOabacate() ">Contato</a>
+        </div>
+
+        <h1>Dev Contábilidade</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/assuncaogalleno@gmail.com" method="POST">
+            <h3 class="titulo-formulario"> Entre em Contato</h3>
+
+            <label>
+                Nome
+                <input type="text" name="Nome" placeholder=" Digite seu nome" required/>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="Email" placeholder=" Digite seu Email" required/>
+            </label>
+
+            <label>
+                Whatsapp
+                <input type="tel" name="Telefone" placeholder="digite seu telefone" required/>
+            </label>
+
+            <label>
+                Fale conosco
+                <textarea name="Duvida" placeholder="Duvidas?"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio"> Nossos Serviços </h2>
+
+    <div class="caixa-central">
+
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade completa</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu negocio</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos de você</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+            </ul>
+        </div>
+    </div>
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">Um texto bem grande aqui</p>
+    </div>
+</body>
+
+<script>
+
+    let formulario = document.getElementById("formulario-contato")
+
+    function chameOabacate() {
+        formulario.className = "mostrar-formulario"
+    }
+
+</script>
+
+</html>
